@@ -18,12 +18,13 @@ public class Sound
   {  
     int count = 0;
     for(int i =1;i<samples.length;i++){
-      if(samples[i]>limit||samples[i]<limit*-1){
-        count++;
-        if(samples[i]>limit){
+      if(samples[i]>limit){
           samples[i]=limit;
-        }else if(samples[i]<limit*-1){
+        count++;
+        }
+      if(samples[i]<limit*-1){
           samples[i]=limit*-1;
+        count++;
         }
       }
     }
