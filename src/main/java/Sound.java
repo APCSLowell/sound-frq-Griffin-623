@@ -45,7 +45,7 @@ public class Sound
       i++;
     }
     for(int j=0;j<samples.length-i;j++){
-      samples[j]=samples[j+1];
+      samples[j]=samples[j+i];
     }
   }
 }
