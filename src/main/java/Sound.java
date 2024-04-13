@@ -45,7 +45,7 @@ public class Sound
     while(samples[i]==0){
       i++;
     }
-    for(int j=1;j<samples.length-i;j++){
+    for(int j=0;j<samples.length-i;j++){
       samples[j]=samples[j+1];
     }
   }
