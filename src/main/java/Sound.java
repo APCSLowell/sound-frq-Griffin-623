@@ -21,8 +21,7 @@ public class Sound
       if(samples[i]>limit){
           samples[i]=limit;
         count++;
-        }
-      if(samples[i]<limit*-1){
+        }else if(samples[i]<limit*-1){
           samples[i]=limit*-1;
         count++;
         }
