@@ -44,8 +44,9 @@ public class Sound
     while(samples[i]==0){
       i++;
     }
+    int[]newSamples = new int[samples.length-i];
     for(int j=0;j<samples.length-i;j++){
-      samples[j]=samples[j+i];
+      newSamples[j]=samples[j+i];
     }
   }
 }
